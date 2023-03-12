@@ -17,7 +17,6 @@ public class Author {
     public String getSurnameAuthor(){
         return this.surnameAuthor;
     }
-
     @Override
     public String toString() {
         return this.nameAuthor + " " + this.surnameAuthor;
