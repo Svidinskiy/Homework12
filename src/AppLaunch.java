@@ -15,5 +15,9 @@ public class AppLaunch {
         System.out.println("book2.getYearPublishing() = " + book2.getYearPublishing());
         book2.setYearPublishing(1898);
         System.out.println("book2.getYearPublishing() = " + book2.getYearPublishing());
+        System.out.println(book1);
+        System.out.println(book2);
+        System.out.println(book3);
+
     }
 }
