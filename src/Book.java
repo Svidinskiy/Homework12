@@ -27,16 +27,17 @@ public class Book {
     public String toString() {
         return "Название: " + this.titleBook + ". Автор: " + this.authorBook + ". Год издания: " + this.yearPublishing;
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return Objects.equals(titleBook, book.titleBook);
+        return yearPublishing == book.yearPublishing && Objects.equals(titleBook, book.titleBook) && Objects.equals(authorBook, book.authorBook);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(titleBook);
+        return Objects.hash(titleBook, yearPublishing, authorBook);
     }
 }
